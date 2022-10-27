@@ -6,4 +6,5 @@ print("nev: ")
 name = str(input())
 
 system("cls")
+
 print(f"szia {name}")

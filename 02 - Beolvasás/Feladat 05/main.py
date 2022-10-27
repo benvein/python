@@ -11,3 +11,8 @@ print("kedvenc dal: ")
 song = str(input())
 
 print("dal hossza percben: ")
+lenght = int(input())
+
+system("cls")
+
+print(f"Az ön kedvenc együttesének neve {band} a legjobb zeneszáma {song} melynek hossza {lenght} perc")
