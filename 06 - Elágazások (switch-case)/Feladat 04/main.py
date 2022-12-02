@@ -11,7 +11,7 @@ num1 = int(input())
 print("adjon meg még egyet: ",end="")
 num2 = int(input())
 
-print("adjon meg egy műveletet (+,-,*,/): ",end="")
+print("adjon meg egy műveletet [+,-,*,/]: ",end="")
 operation = str(input())
 
 match operation:
@@ -27,3 +27,5 @@ match operation:
     case "/":
         result = num1 / num2
         print(f"a végeredmény {result}")
+    case _:
+        print("ilyen művelet nincs")

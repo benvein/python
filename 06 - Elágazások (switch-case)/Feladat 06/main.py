@@ -12,7 +12,7 @@ print("adja meg a téglalap szélességét: ",end="")
 rectangleWidth = int(input())
 
 print("adja meg a műveletet: ",end="")
-rectangleOperations = str(input())
+rectangleOperations = str(input().lower().strip())
 
 t = rectangleWidth * rectangleLenght
 k = 2*(rectangleLenght + rectangleWidth)
@@ -25,3 +25,5 @@ match rectangleOperations:
         print(f"a téglalap kerülete: {k} cm")
     case "a":
         print(f"a téglalap átlója: {a} cm")
+    case _:
+        print("ilyen múvelet nincs")

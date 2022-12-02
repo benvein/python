@@ -1,6 +1,6 @@
 from os import system
 
-month = input("írja a jelenlegi hónap nevét: ")
+month: str = input("írja a jelenlegi hónap nevét: ").lower().strip()
 
 match month:
     case "január":
@@ -28,4 +28,4 @@ match month:
     case "december":
         print("12. hónap")
     case _:
-        print("mivan")
+        print("ilyen hónap nincs")
