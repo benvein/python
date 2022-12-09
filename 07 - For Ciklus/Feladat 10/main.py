@@ -9,6 +9,8 @@ start = int(input())
 print("végérték: ",end="")
 end = int(input())
 
+sum = 0
 for i in range(start, end):
-    osszeg = 0
-    
+    sum = sum + i
+
+print(sum)

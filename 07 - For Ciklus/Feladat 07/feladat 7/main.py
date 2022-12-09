@@ -4,7 +4,6 @@ from os import system
 
 a: int = None
 b: int = None
-interval = [a, b]
 
 print("adja meg az intervallum kezdőértékét: ",end="")
 a = int(input())
