@@ -15,3 +15,4 @@ for i in range(start, end+1, 2):
 for i in range(start+1, end, 2):
     osszeg -= i
 print(osszeg)
+
