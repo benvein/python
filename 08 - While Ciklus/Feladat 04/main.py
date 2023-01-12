@@ -1,10 +1,9 @@
 from os import system
 
 num: int = None
-jelenlegoOsszeg: int = None
-hanyadikBevitel: int= None
-sum: int = 0
+sum: int = None
 
-print("szám: ",end="")
-num = int(input())
+while sum<100:
+    num += 1
+    print(f"{num}")
 
