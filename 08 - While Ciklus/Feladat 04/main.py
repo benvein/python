@@ -1,9 +1,17 @@
 from os import system
+system("cls")
 
-num: int = None
-sum: int = None
+print("adjon meg egy számot: ",end="")
+szam = int(input())
 
-while sum<100:
-    num += 1
-    print(f"{num}")
+osszeg = szam
+proba=1
 
+while osszeg<100:
+    print("adjon meg egy számot: ")
+    szam=int(input())
+    proba+=1
+    osszeg = osszeg + szam
+
+print(f"ennyi próba kellett: {proba}")
+print(osszeg)
