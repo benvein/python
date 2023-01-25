@@ -16,3 +16,4 @@ elif eletkor>19 and eletkor<66:
     print("dolgozó")
 else:
     print("nyugdíjas")
+    

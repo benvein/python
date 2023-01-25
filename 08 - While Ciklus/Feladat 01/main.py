@@ -1,10 +1,18 @@
 from os import system
+system("cls")
 
-num: int = None
+num: float = None
+temp: str = None
+isNumber: bool = False
+truncatedString: str = None
 
-print("0 és 9 közötti szám: ",end="")
-num = int(input())
+while (num == None or (num < 0 or num > 9)):
+    print("Adjon meg egy számot: ",end="")
+    temp = input()
+    truncatedString = temp.replace(".", "").replace("-", "")
+    isNumber = truncatedString.isnumeric()
 
-while (num<0) or (num>10):
-    print("nem jó")
-    num = int(input())
+    if (isNumber):
+        num = float(temp)
+    else: 
+        print("nem számot adott meg")
