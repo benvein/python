@@ -1,10 +1,9 @@
 from os import system
 system("cls")
 
-print("életkor: ",end="")
-eletkor=int(input())
+eletkor: int = None
 
-while (eletkor<0) or (eletkor>100):
+while eletkor == None or ((eletkor<0) or (eletkor>100)):
     print("érvényes életkort adjon meg")
     eletkor=int(input())
 

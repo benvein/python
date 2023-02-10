@@ -1,8 +1,7 @@
 from os import system
 system("cls")
 
-print("adja meg a határt: ",end="")
-hatar = int(input())
+hatar: int = 0
 
 while hatar<100:
     print("100 fölötti értéket adjon meg: ",end="")

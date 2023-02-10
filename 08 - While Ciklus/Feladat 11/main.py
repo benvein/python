@@ -3,11 +3,9 @@ import random
 system("cls")
 
 numParatlan: int = 0
+numParos: int = None
 
-print("adjon meg egy páros számot: ",end="")
-numParos=int(input())
-
-while (numParos % 2 != 0):
+while (numParos == None) or (numParos % 2 != 0):
     print("egy páros számot adjon meg: ",end="")
     numParos = int(input())
 

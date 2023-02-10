@@ -1,6 +1,5 @@
 from os import system
-
-name: str = None
+system("cls")
 
 print("adja meg a nevét: ",end="")
 name = str(input())

@@ -1,5 +1,6 @@
 from os import system
 import random
+system("cls")
 
 randomNum = random.randint(0, 9)
 num: int = None

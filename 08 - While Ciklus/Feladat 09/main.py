@@ -1,10 +1,9 @@
 from os import system
 system("cls")
 
-print("adjon meg egy számot: ",end="")
-num=int(input())
+num: int = None
 
-while(num / 1 < 100):
+while (num == None) or (num / 1 < 100):
     print("háromjegyű számot adjon meg: ",end="")
     num=int(input())
 
