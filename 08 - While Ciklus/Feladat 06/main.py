@@ -3,7 +3,7 @@ system("cls")
 
 eletkor: int = None
 
-while eletkor == None or ((eletkor<0) or (eletkor>100)):
+while (eletkor == None) or (eletkor<0 or eletkor>100):
     print("érvényes életkort adjon meg")
     eletkor=int(input())
 
