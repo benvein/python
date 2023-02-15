@@ -17,7 +17,7 @@ randomNum = random.randint(numParos, numParatlan)
 
 print(f"a random szám {randomNum}")
 
-if (randomNum-numParos)>(numParatlan-randomNum):
+if (randomNum-numParos) > (numParatlan-randomNum):
     print("a páros szám van messzebb a random számtól")
 else:
     print("a páratlan szám van messzebb a random számtól")

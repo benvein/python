@@ -1,10 +1,9 @@
 from os import system
 system("cls")
 
-print("adja meg a nevét: ",end="")
-name = str(input())
+name: str = None
 
-while (len(name) < 2):
+while (name == None) or (len(name) < 2):
     print("normális nevet adjon meg: ",end="")
     name = str(input())
 

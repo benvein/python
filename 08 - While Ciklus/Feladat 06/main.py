@@ -4,7 +4,7 @@ system("cls")
 eletkor: int = None
 
 while (eletkor == None) or (eletkor<0 or eletkor>100):
-    print("érvényes életkort adjon meg")
+    print("érvényes életkort adjon meg: ",end="")
     eletkor=int(input())
 
 if eletkor>0 and eletkor<7:

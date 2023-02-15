@@ -8,7 +8,7 @@ osszeg = szam
 proba=1
 
 while osszeg<100:
-    print("adjon meg egy számot: ")
+    print("adjon meg egy számot: ",end="")
     szam=int(input())
     proba+=1
     osszeg = osszeg + szam

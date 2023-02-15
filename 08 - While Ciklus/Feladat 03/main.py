@@ -16,8 +16,8 @@ while num != randomNum:
     num=int(input())
     probalkozas += 1
     if probalkozas == 4:
-        print("L")
+        print("nem sikerült kitalálni")
         break
 
 if randomNum == num:
-    print("W")
+    print("kitaláltad")
