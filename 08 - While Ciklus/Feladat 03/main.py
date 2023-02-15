@@ -11,8 +11,8 @@ num = int(input())
 
 #print(randomNum)
 
-while num != randomNum:
-    print("nem talált")
+while (num != randomNum): #nem jó feltétel még nem találta el és van próbálkozási lehetősége
+    print("nem talált") #teljes javítás
     num=int(input())
     probalkozas += 1
     if probalkozas == 4:

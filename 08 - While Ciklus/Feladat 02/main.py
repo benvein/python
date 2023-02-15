@@ -5,6 +5,6 @@ name: str = None
 
 while (name == None) or (len(name) < 2):
     print("normális nevet adjon meg: ",end="")
-    name = str(input())
+    name = input()
 
 print(f"üdvözlöm, {name}")
