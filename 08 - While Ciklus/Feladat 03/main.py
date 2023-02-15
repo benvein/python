@@ -5,19 +5,9 @@ system("cls")
 randomNum = random.randint(0, 9)
 num: int = None
 probalkozas: int = 0
-
-print("0 és 9 közötti szám: ",end="")
-num = int(input())
+num: int = None
 
 #print(randomNum)
 
-while (num != randomNum): #nem jó feltétel még nem találta el és van próbálkozási lehetősége
-    print("nem talált") #teljes javítás
-    num=int(input())
-    probalkozas += 1
-    if probalkozas == 4:
-        print("nem sikerült kitalálni")
-        break
-
-if randomNum == num:
-    print("kitaláltad")
+while (num == None) or ((num != randomNum) and (probalkozas < 5)): #nem jó feltétel még nem találta el és van próbálkozási lehetősége
+    print("adjon meg egy 0 és 9 közötti számot: ",end="")
