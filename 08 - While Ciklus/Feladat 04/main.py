@@ -1,17 +1,25 @@
 from os import system
 system("cls")
 
-print("adjon meg egy számot: ",end="")
-szam = int(input())
+num: float = None
+temp: str = None
+trStr: str = None
+isNumber: bool = False
+osszeg: float = 0
+hanyadikBevitel: int = 0
 
-osszeg = szam
-proba=1
+while (num == None or osszeg < 100):
+    print("adjon meg számokat: ",end="")
+    temp = input()
+    trStr = temp.replace(".", "").replace("-", "")
+    isNumber = temp.isnumeric()
 
-while osszeg<100: #egész újra
-    print("adjon meg egy számot: ",end="")
-    szam=int(input())
-    proba+=1
-    osszeg = osszeg + szam
+    if (isNumber):
+        num = float(temp)
+        osszeg += num
+        hanyadikBevitel += 1
+    else: 
+        print("nem számot adott meg")
 
-print(f"ennyi próba kellett: {proba}")
-print(osszeg)
+    print(f"jelenlegi bevitel száma: {hanyadikBevitel}\njelenlegi összeg: {osszeg}")
+

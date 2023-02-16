@@ -1,19 +1,36 @@
 from os import system
 system("cls")
 
-print("adjon meg egy szamot: ",end="")
-num=int(input())
+numElso: int = None
+numMasik: int = None
+tempElso: str = None
+tempMasik: str = None
+trStrElso: str = None
+trStrMasik: str = None
+isNumberElso: bool = False
+isNumberMasik: bool = False
 
-print("meg egyet: ",end="")
-numMasik=int(input())
+while (numElso == None):
+    print("adjon meg egy számot: ",end="")
+    tempElso = input()
+    trStrElso = tempElso.replace(".", "").replace("-", "")
+    isNumberElso = tempElso.isnumeric()
 
-while (num == numMasik):
-    print("masik szamot adjon meg: ",end="")
-    numMasik=int(input())
+    if (isNumberElso):
+        numElso = int(tempElso)
+    else:
+        print("nem számot adott meg")
 
-if (num>numMasik):
-    for i in range(num, numMasik-1, -1):
-        print(i)
-else:
-    for i in range(numMasik, num-1, -1):
-        print(i)
+while (numMasik == None or (numMasik == numElso or numMasik < numElso)):
+    print(f"adjon meg egy másik számot, ami nagyobb {numElso}-nél: ",end="")
+    tempMasik = input()
+    trStrMasik = tempMasik.replace(".", "").replace("-", "")
+    isNumberMasik = tempMasik.isnumeric
+
+    if (isNumberMasik):
+        numMasik = int(tempMasik)
+    else:
+        print("nem számot adott meg")
+
+for i in range(numMasik, numElso-1, -1):
+    print(i)

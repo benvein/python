@@ -3,11 +3,25 @@ import random
 system("cls")
 
 randomNum = random.randint(0, 9)
-num: int = None
+num: float = None
 probalkozas: int = 0
-num: int = None
+temp: str = None
+trStr: str = None
+isNumber: bool = False
 
-#print(randomNum)
 
 while (num == None) or ((num != randomNum) and (probalkozas < 5)): #nem jó feltétel még nem találta el és van próbálkozási lehetősége
     print("adjon meg egy 0 és 9 közötti számot: ",end="")
+    temp = input()
+    trStr = temp.replace(".", "").replace("-", "")
+    isNumber = trStr.isnumeric()
+
+    if (isNumber):
+        num = float(temp)
+        probalkozas += 1
+        if (probalkozas == 5):
+            print("nem találtad ki")
+            break
+    else: 
+        print("nem számot adott meg")
+
