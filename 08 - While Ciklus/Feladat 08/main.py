@@ -8,7 +8,7 @@ isNumber: bool = False
 
 print("Pepsi [1]\nCoca Cola [2]\nSprite [3]\n Canadian dry [4]\nÁsványvíz [5]")
 
-while (valasztas == None):
+while (valasztas == None or valasztas < 1 or valasztas > 5):
     print("adja meg melyik üdítőt szeretné: ",end="")
     temp = input()
     trStr = temp.replace(".", "").replace("-", "")
@@ -16,9 +16,6 @@ while (valasztas == None):
 
     if (isNumber):
         valasztas = int(temp)
-        if (valasztas < 1 or valasztas > 5):
-            print("nem kap üdítőt")
-            break
     else:
         print("nem számot adott meg")
 

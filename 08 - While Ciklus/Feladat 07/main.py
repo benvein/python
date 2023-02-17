@@ -3,8 +3,7 @@ system("cls")
 
 numElso: int = None
 numMasik: int = None
-tempElso: str = None
-tempMasik: str = None
+temp: str = None
 trStrElso: str = None
 trStrMasik: str = None
 isNumberElso: bool = False
@@ -12,23 +11,23 @@ isNumberMasik: bool = False
 
 while (numElso == None):
     print("adjon meg egy számot: ",end="")
-    tempElso = input()
-    trStrElso = tempElso.replace(".", "").replace("-", "")
-    isNumberElso = tempElso.isnumeric()
+    temp = input()
+    trStrElso = temp.replace(".", "").replace("-", "")
+    isNumberElso = temp.isnumeric()
 
     if (isNumberElso):
-        numElso = int(tempElso)
+        numElso = int(temp)
     else:
         print("nem számot adott meg")
 
 while (numMasik == None or (numMasik == numElso or numMasik < numElso)):
     print(f"adjon meg egy másik számot, ami nagyobb {numElso}-nél: ",end="")
-    tempMasik = input()
-    trStrMasik = tempMasik.replace(".", "").replace("-", "")
-    isNumberMasik = tempMasik.isnumeric
+    temp = input()
+    trStrMasik = temp.replace(".", "").replace("-", "")
+    isNumberMasik = temp.isnumeric
 
     if (isNumberMasik):
-        numMasik = int(tempMasik)
+        numMasik = int(temp)
     else:
         print("nem számot adott meg")
 

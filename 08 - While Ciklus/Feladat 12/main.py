@@ -15,9 +15,6 @@ while (penz == None or (penz>100000)):
 
     if (isNumber):
         penz = int(temp)
-        if (penz>100000):
-            print("már elérte a 100.000 Forintot")
-            break
     else:
         print("nem számot adott meg")
 

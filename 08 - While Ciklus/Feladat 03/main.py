@@ -10,7 +10,7 @@ trStr: str = None
 isNumber: bool = False
 
 
-while (num == None) or ((num != randomNum) and (probalkozas < 5)): #nem jó feltétel még nem találta el és van próbálkozási lehetősége
+while (num == None) or ((num != randomNum) and (probalkozas < 5)): 
     print("adjon meg egy 0 és 9 közötti számot: ",end="")
     temp = input()
     trStr = temp.replace(".", "").replace("-", "")
