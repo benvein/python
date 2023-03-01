@@ -1,17 +1,28 @@
 from os import system
 system("cls")
 
-x: int = 9
-y: int = 3
+def osszeadas(a: int, b: int) -> int:
+    vegeredmeny: int = a + b
+    return vegeredmeny
 
-def muveletek(x: int, y: int) -> int:
-    osszeadas = x + y
-    kivonas = x - y
-    szorzas = x * y
-    osztas: float = x / y
-    return osszeadas, kivonas, szorzas, osztas
+def kivonas(a: int, b: int) -> int:
+    vegeredmeny: int = a - b
+    return vegeredmeny
 
-osszeadas: int = osszeadas(x, y)
-kivonas: int = kivonas(x, y)
+def szorzas(a: int, b: int) -> int:
+    vegeredmeny: int = a * b
+    return vegeredmeny
 
-print(f"osszeadas eredmenye: {osszeadas}")
+def osztas(a: int, b: int) -> float:
+    vegeredmeny: float = a / b
+    return vegeredmeny
+
+a: int = 9
+b: int = 3
+
+eredmenyOsszeadas: int = osszeadas(a, b)
+eredmenyKivonas: int = kivonas(a, b)
+eredmenySzorzas: int = szorzas(a, b)
+eredmenyOsztas:  float = osztas(a, b)
+
+print(f"{eredmenyOsszeadas}, {eredmenyKivonas}, {eredmenySzorzas}, {eredmenyOsztas}")
