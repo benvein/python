@@ -22,11 +22,12 @@ def getYearFromConsole() -> int:
         isNumber = truncatedString.isnumeric()
 
         if (isNumber):
-            year = float(temp)
+            year = int(temp)
         else: 
             print("nem számot adott meg")   
 
     return year
+
 
 def printToConsole(eletkor: int, name: str) -> None:
     print(f"{name} ön az idén {eletkor} éves")
