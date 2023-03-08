@@ -19,3 +19,4 @@ def getNumberFromConsole() -> float:
 
 def printToConsole(a: float, b: float, result: float, operator: str) -> None:
     print(f"{a} {operator} {b} = {result}")
+    

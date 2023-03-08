@@ -1,10 +1,7 @@
 from os import system
 system("cls")
+from consoleio import *
 
-nev: str = input("adja meg a nevét: ")
+name: str = getNameFromConsole()
 
-def nevFv(nev: str) -> str:
-    return nev
-
-felhasznalo: str = nevFv(nev)
-print(f"üdvözlöm {nev}")
+printToConsole(name)
