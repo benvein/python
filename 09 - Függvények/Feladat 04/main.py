@@ -1,16 +1,9 @@
 from os import system
 system("cls")
-system("color A")
-import sty
+from consoleio import *
 
-nev: str = None
+name: str = None
 
-def nevBekeres(nev: str) -> str:
-    print("adja meg a nevét: ")
-    nev = input()
+name = getNameFromConsole()
 
-    return nev
-
-bekertNev: str = nevBekeres(nev)
-
-print(f"Üdvözlöm {bekertNev}")
+printToConsole(name)
