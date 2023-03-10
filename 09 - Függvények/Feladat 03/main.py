@@ -1,7 +1,8 @@
 from os import system 
-system("cls")
 from consoleio import *
 from metfunction import *
+
+system("cls")
 
 name: str = None
 eletkor: int = None

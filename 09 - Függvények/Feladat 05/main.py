@@ -9,7 +9,7 @@ text1: str = None
 text2: str = None
 
 text1 = getTextFromConsole()
-text2 = getTextFromConsole()
+text2 = getSecondTextFromConsole()
 
-sameLetter = check(text1, text2)
+sameLetter = countSameLetters(text1, text2)
 printToConsole(sameLetter)
