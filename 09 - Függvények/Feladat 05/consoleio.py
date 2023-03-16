@@ -12,6 +12,8 @@ def getTextFromConsole() -> str:
         else: 
             print("csak betu legyen benne")
 
+    return text1
+
 def getSecondTextFromConsole() -> str:
     text2: str = None
     temp: str = None
@@ -25,6 +27,8 @@ def getSecondTextFromConsole() -> str:
             text2=str(temp)
         else: 
             print("csak betu legyen benne")
+
+    return text2
 
 def printToConsole(sameLetter: int) -> None:
     print(f"megegyező betűk száma: {sameLetter}")
