@@ -1,15 +1,11 @@
 from os import system
-system("cls")
-
 from consoleio import *
 from metfunctions import *
 
-sameLetter: int = None
-text1: str = None
-text2: str = None
+system("cls")
 
-text1 = getTextFromConsole()
-text2 = getSecondTextFromConsole()
+text1: str = getTextFromConsole()
+text2: str = getSecondTextFromConsole()
 
-sameLetter = countSameLetters(text1, text2)
+sameLetter: int = countSameLetters(text1, text2)
 printToConsole(sameLetter)
