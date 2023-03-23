@@ -1,5 +1,5 @@
-def getDegreeFromConsole () -> int:
-    degree: int = None
+def getDegreeFromConsole () -> float:
+    degree: float = None
     temp: str = None
     trStr: str = None
     isNumber: bool = False
@@ -10,7 +10,7 @@ def getDegreeFromConsole () -> int:
         isNumber = trStr.isnumeric()
 
         if (isNumber):
-            degree = int(temp)
+            degree = float(temp)
         else:
             print("nem szamot adott meg")
 
@@ -25,9 +25,12 @@ def getUnitFromConsole () -> str:
         temp=input()
         isAlpha=temp.isalpha()
 
-        if (isAlpha):
+        if (isAlpha and (temp=="K" or temp=="Kelvin" or temp=="F" or temp=="Farenheit")):
             unit=str(temp)
         else: 
             print("csak betu legyen benne")
 
     return unit.strip().capitalize()
+
+def printToConsole(mertekegyseg: str, hofok: int) -> None:
+    print(f"az atalakitott hofok: {hofok} {mertekegyseg}")
