@@ -6,3 +6,6 @@ system("cls")
 
 hofok: float = getDegreeFromConsole()
 mertekegyseg: str = getUnitFromConsole()
+konvertaltHofok: float = convertToKelvin(mertekegyseg, hofok)
+
+printToConsole(mertekegyseg, konvertaltHofok)

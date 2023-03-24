@@ -32,5 +32,5 @@ def getUnitFromConsole () -> str:
 
     return unit.strip().capitalize()
 
-def printToConsole(mertekegyseg: str, hofok: int) -> None:
-    print(f"az atalakitott hofok: {hofok} {mertekegyseg}")
+def printToConsole(mertekegyseg: str, konvertaltHofok: int) -> None:
+    print(f"az atalakitott hofok: {konvertaltHofok} {mertekegyseg}")
