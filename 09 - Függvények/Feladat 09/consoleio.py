@@ -19,18 +19,22 @@ def forintBekeres() -> int:
 
 def arfolyamBekeres(jpy: str, usd: str, chf: str) -> str:
     arfolyam: str = None
-    jpy = "jpy"
-    usd = "usd"
-    chf = "chf"
 
-    while(arfolyam == None or (arfolyam != jpy or arfolyam != usd or arfolyam != chf)):
+    while(arfolyam == None or arfolyam != "jpy" or arfolyam != "usd" or arfolyam != "chf"):
         print("adja meg melyik arfolyamba szeretne konvertalni [jpy, usd, chf]: ")
         arfolyam = input()
 
+    if (arfolyam == "jpy"):
+        arfolyam = str(jpy)
+    elif (arfolyam == "usd"):
+        arfolyam = str(usd)
+    elif (arfolyam == "chf"):
+        arfolyam = str(chf)
+
     return arfolyam
 
-def kiiratas(arfolyam: str, forint: int, jpy: float, usd: float, chf: float, euro: float) -> None:
-    if (arfolyam == jpy):
+def kiiratas(arfolyam: str, forint: int, jpy: str, usd: str, chf: str, euro: str) -> None:
+    if (arfolyam == "jpy"):
         print(f"{forint} forint = {jpy}¥ ami {euro}€")
     elif (arfolyam == usd):
         print(f"{forint} forint = {usd}$ ami {euro}€")
