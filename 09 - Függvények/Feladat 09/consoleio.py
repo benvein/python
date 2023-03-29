@@ -22,18 +22,10 @@ def arfolyamBekeres(jpy: str, usd: str, chf: str) -> str:
     jpy = "jpy"
     usd = "usd"
     chf = "chf"
-    temp: str = None
-    isAlpha: bool = False
 
     while(arfolyam == None or (arfolyam != jpy or arfolyam != usd or arfolyam != chf)):
         print("adja meg melyik arfolyamba szeretne konvertalni [jpy, usd, chf]: ")
-        temp = input()
-        isAlpha = temp.isalpha()
-
-        if(isAlpha):
-            arfolyam = str(temp)
-        else:
-            print("csak betu legyen benne")
+        arfolyam = input()
 
     return arfolyam
 
