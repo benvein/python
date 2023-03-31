@@ -12,7 +12,7 @@ def konvert(forint: int, arfolyam: str) -> float:
 def euroKonvert(konvertaltErtek: float, arfolyam: str) -> float: 
     euro: float = None
     if(arfolyam=="jpy"):
-        euro = konvertaltErtek * 0.75
+        euro = konvertaltErtek * 0.0069
     elif(arfolyam=="usd"):
         euro = konvertaltErtek * 0.8
     elif(arfolyam=="chf"):

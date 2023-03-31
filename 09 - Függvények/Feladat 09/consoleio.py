@@ -20,7 +20,7 @@ def forintBekeres() -> int:
 def arfolyamBekeres(jpy: str, usd: str, chf: str) -> str:
     arfolyam: str = None
 
-    while(arfolyam == None or (arfolyam != "jpy" or arfolyam != "usd" or arfolyam != "chf")):
+    while(arfolyam == None):
         print("adja meg melyik arfolyamba szeretne konvertalni [jpy, usd, chf]: ")
         arfolyam = input()
 
