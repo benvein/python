@@ -33,10 +33,10 @@ def arfolyamBekeres(jpy: str, usd: str, chf: str) -> str:
 
     return arfolyam
 
-def kiiratas(arfolyam: str, forint: int, jpy: str, usd: str, chf: str, euro: str) -> None:
+def kiiratas(arfolyam: str, forint: int, konvertaltErtek: float, euro: str) -> None:
     if (arfolyam == "jpy"):
-        print(f"{forint} forint = {jpy}¥ ami {euro}€")
-    elif (arfolyam == usd):
-        print(f"{forint} forint = {usd}$ ami {euro}€")
-    elif (arfolyam == chf):
-        print(f"{forint} forint = {chf} CHF ami {euro}€")
+        print(f"{forint} forint = {konvertaltErtek}¥ ami {euro}€")
+    elif (arfolyam == "usd"):
+        print(f"{forint} forint = {konvertaltErtek}$ ami {euro}€")
+    elif (arfolyam == "chf"):
+        print(f"{forint} forint = {konvertaltErtek} CHF ami {euro}€")

@@ -4,13 +4,13 @@ from metfunctions import *
 
 system("cls")
 
-jpy = "jpy"
-chf = "chf"
-usd = "usd"
+jpy: str = "jpy"
+chf: str = "chf"
+usd: str = "usd"
 
 forint: int = forintBekeres()
 arfolyam: str = arfolyamBekeres(jpy, usd, chf)
-konvertaltErtek: float = konvert(forint, arfolyam, jpy, usd, chf)
-euro: float = euroKonvert(konvertaltErtek, arfolyam, jpy, usd, chf)
+konvertaltErtek: float = konvert(forint, arfolyam)
+euro: float = euroKonvert(konvertaltErtek, arfolyam)
 
-kiiratas(arfolyam, forint, jpy, usd, chf, euro)
+kiiratas(arfolyam, forint, konvertaltErtek, euro)
