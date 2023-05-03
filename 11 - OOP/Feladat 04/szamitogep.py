@@ -19,7 +19,7 @@ class Szamitogep:
             self.magok: int = magok
 
         def __str__(self):
-            return f"processzor gyártója: {self.gyarto}, modell: {self.modell}, magok száma: {self.magok}"
+            return f"processzor: {self.gyarto} {self.modell} {self.magok} mag"
 
     class Videokartya:
         def __init__(self, gyarto: str, modell: str, vram: int):
@@ -29,7 +29,7 @@ class Szamitogep:
             self.vram: int = vram
         
         def __str__(self):
-            return f"videókártya gyártója: {self.gyarto}, modell: {self.modell}, vram: {self.vram} gb"
+            return f"videókártya: {self.gyarto} {self.modell} {self.vram} GB"
 
     class Hattertar:
         def __init__(self, gyarto: str, modell: str, meret: int, csatlakozas: str):
@@ -40,7 +40,7 @@ class Szamitogep:
             self.csatlakozas: str = csatlakozas
 
         def __str__(self):
-            return f"Háttértár gyártója: {self.gyarto}, modell: {self.modell}, meret: {self.meret} GB, csatlakozás: {self.csatlakozas}"
+            return f"Háttértár: {self.gyarto} {self.modell} {self.meret} GB {self.csatlakozas}"
 
     class Alaplap: 
         def __init__(self, gyarto: str, modell: str, tipus: str, processzorFoglalat: str):
@@ -51,7 +51,7 @@ class Szamitogep:
             self.processzorFoglalat: str = processzorFoglalat
 
         def __str__(self):
-            return f"Alaplap gyartoja: {self.gyarto}, modell: {self.modell}, típus: {self.tipus}, processzorfoglalat: {self.processzorFoglalat}"
+            return f"Alaplap: {self.gyarto} {self.modell} {self.tipus} {self.processzorFoglalat}"
 
     class Tapegyseg:
         def __init__(self, gyarto: str, modell: str, teljesitmeny: int):
@@ -61,7 +61,7 @@ class Szamitogep:
             self.teljesitmeny: int = teljesitmeny
 
         def __str__(self):
-            return f"tapegyseg gyartoja: {self.gyarto}, modell: {self.modell}, teljesitmeny: {self.teljesitmeny}W"
+            return f"tapegyseg: {self.gyarto} {self.modell} {self.teljesitmeny}W"
 
     class RAM: 
         def __init__(self,  gyarto: str, modell: str, meret: int):
@@ -71,7 +71,7 @@ class Szamitogep:
             self.meret: str = meret
 
         def __str__(self):
-            return f"RAM gyartoja: {self.gyarto}, modell: {self.modell}, meret: {self.meret}GB"
+            return f"RAM: {self.gyarto} {self.modell} {self.meret} GB"
     
 
             
