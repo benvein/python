@@ -19,4 +19,4 @@ class Szamitogep:
         return f"{self.processzor}\n{self.videokartya}\n{self.hattertar}\n{self.alaplap}\n{self.tapegyseg}\n{self.ram}"
 
             
-    
+#hf 3 kulonbozo osztaly kell letrehozni 2 egyszeru mint a motor 1 osszetett mint a pc
