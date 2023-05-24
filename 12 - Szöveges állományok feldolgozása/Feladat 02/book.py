@@ -1,4 +1,3 @@
-import datetime
 
 class Book:
     def __init__(self) -> None:
@@ -6,7 +5,7 @@ class Book:
 
         self.writerFirstName: str = None
         self.writerLastName: str = None
-        self.writerBirthDate: datetime = datetime()
+        self.writerBirthDate: str = None
         self.bookTitle: str = None
         self.isbn: str = None
         self.publsher: str = None
