@@ -1,4 +1,3 @@
-
 class Book:
     def __init__(self) -> None:
         super().__init__()
@@ -9,7 +8,7 @@ class Book:
         self.bookTitle: str = None
         self.isbn: str = None
         self.publsher: str = None
-        self.publishYear: str = None
+        self.publishYear: int = 0
         self.bookPrice: float = 0
         self.theme: str = None
         self.pageNumbers: int = 0
