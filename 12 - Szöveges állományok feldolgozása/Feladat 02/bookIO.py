@@ -2,8 +2,9 @@ from book import Book
 from typing import *
 import os
 from io import open
+from datetime import datetime
 
-def readBooksFromFile() -> List[Book]:
+def readBooksFromFile(fileName: str) -> List[Book]:
 
     fileName: str = "data/adatok.txt"
     basepath: str = os.path.dirname(os.path.abspath(__file__))
@@ -23,14 +24,14 @@ def readBooksFromFile() -> List[Book]:
                 book = Book()
                 book.writerFirstName = data[0]
                 book.writerLastName = data[1]
-                book.writerBirthDate = data[2]
+                book.writerBirthDate = datetime.fromisoformat(data[2])
                 book.bookTitle = data[3]
                 book.isbn = data[4]
                 book.publsher = data[5]
-                book.publishYear = data[6]
-                book.bookPrice = data[7]
+                book.publishYear = int(data[6])
+                book.bookPrice = float(data[7])
                 book.theme = data[8]
-                book.pageNumbers = data[9]
+                book.pageNumbers = int(data[9])
                 book.writerMononarium = float(data[10])
 
                 books.append(book)

@@ -3,12 +3,11 @@ from book import Book
 from services import *
 from bookIO import *
 
-books: List[Book] = readBooksFromFile()
+fileName: str = "data/adatok.txt"
+books: List[Book] = readBooksFromFile(fileName)
 
 #Írjuk ki a képernyőre az össz adatot
-print("minden adat: ")
-for book in books:
-    print(book)
+writeToConsole(books)
 
 
 
