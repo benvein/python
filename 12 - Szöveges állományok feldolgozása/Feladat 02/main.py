@@ -18,7 +18,7 @@ writeItBooksInFile(bookIT, "informatika.txt")
 
 
 #Az 1900.txt állományba mentsük el azokat a könyveket amelyek az 1900-as években íródtak
-booksFrom20thCentury: List[Book] = booksFrom1900(books, 1900, 2000)
+booksFrom20thCentury: List[Book] = booksFrom1900(books)
 write1900BooksInFile(booksFrom20thCentury, "1900.txt")
 
 

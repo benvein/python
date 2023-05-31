@@ -64,3 +64,15 @@ def write1900BooksInFile(books: List[Book], fileName: str) -> None:
                 file.write(f"{book.writerFirstName} {book.writerLastName} - {book.bookTitle} [{book.publishYear}], {book.theme}\n")
     except FileNotFoundError as ex:
         print(f"{ex.filename} nem talalhato")
+
+def descendingPageNumbers(books: List[Book], fileName: str) -> None:
+    basepath: str = os.path.dirname(os.path.abspath(__file__))
+    basepath += "/output"
+    fileFullPath: str = os.path.join(basepath, fileName)
+
+    try:
+        with open(fileFullPath, encoding="utf-8", mode="w") as file:
+            for book in books:
+                file.write(f"{book.writerFirstName} {book.writerLastName} - {book.bookTitle} [{book.publishYear}], {book.pageNumbers}\n")
+    except FileNotFoundError as ex:
+        print(f"{ex.filename} nem talalhato")

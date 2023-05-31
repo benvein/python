@@ -17,5 +17,9 @@ def itBooks(books: List[Book], itTheme: str) -> List[Book]:
 def booksFrom1900(books: List[Book]) -> List[Book]:
     bookFrom20thCentury: List[Book] = []
 
-   
+    for book in books:
+        if (1900<book.publishYear and book.publishYear<2000):
+            bookFrom20thCentury.append(book)
+
     return bookFrom20thCentury
+    
