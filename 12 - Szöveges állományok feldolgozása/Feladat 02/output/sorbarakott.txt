@@ -1,0 +1,38 @@
+Lefebvre Georges - Nap�leon [1975], t�rt�nelem 783
+King Stephen - �lomcsapda [2006], sci-fi 752
+King Stephen - Hasznos holmik [2005], horror 720
+Castelot Andr� - Nap�leon [2004], t�rt�nelem 653
+Fowler Martin - Domain-Specific Languages [2010], informatika 640
+Hutchinson Robert - A F�ld enciklop�di�ja [2010], term�szettudom�ny 608
+Allaby Michael - A F�ld enciklop�di�ja [2010], term�szettudom�ny 608
+King Stephen - A t�zgy�jt� [2010], krimi 520
+Dinwiddie Robert - Az �ce�n [2007], term�szettudom�ny 512
+Dinwiddie Robert - Az univerzum [2007], term�szettudom�ny 512
+Eales Philip - Az �ce�n [2007], term�szettudom�ny 512
+Eales Philip - Az univerzum [2007], term�szettudom�ny 512
+Cousteau Fabien - Az �ce�n [2007], term�szettudom�ny 512
+Sparks John - Az �ce�n [2007], term�szettudom�ny 512
+Fable Vavyan - �bredj velem! [2007], krimi 490
+Fable Vavyan - T�zvar�zs [2010], krimi 488
+J�kai M�r - 1848 - a magyar szabads�gharcz 1848-49-ben [2009], t�rt�nelem 476
+M�ra Ferenc - Aranykopors� [2005], sz�pirodalom 472
+Fable Vavyan - V�szbej�rat [2008], krimi 472
+Harrison Harry - Fagyos �den [2010], sci-fi 460
+J�kai M�r - A k�sz�v� ember fiai [2006], sz�pirodalom 442
+Gamma Erich - Programtervez�si mint�k - �jrahasznos�that� elemek objektumk�zpont� programokhoz [2004], informatika 421
+Gamma Erich - Design Patterns: Elements of Reusable Object-Oriented Software [1994], informatika 416
+Fowler Martin - Refactoring - K�djav�t�s �jratervez�ssel [2006], informatika 372
+Attenborough David - Az �let er�pr�b�i [1994], term�szettudom�ny 326
+Attenborough David - Az �l� bolyg� - a f�ld mai arculata [1994], term�szettudom�ny 324
+Asimov Isaac - A Hold trag�di�ja [1979], sz�pirodalom 310
+Christie Agatha - �s elj� a hal�l... [2007], krimi 292
+Asimov Isaac - A biol�gia r�vid t�rt�nete [1972], term�szettudom�ny 278
+Christie Agatha - �jf�lt�jt [2008], krimi 272
+Christie Agatha - T�z kicsi n�ger [2010], krimi 266
+King Stephen - Dolores [2006], thriller 264
+Christie Agatha - A v�d tan�ja [1994], krimi 254
+Attenborough David - Az els� �denkert [1989], term�szettudom�ny 238
+Christie Agatha - A v�ratlan vend�g [2004], krimi 200
+M�ra Ferenc - A gyevi t�rv�ny - Tanuls�gos mes�k, mond�k M�ty�s kir�lyr�l [2010], mesek�nyv 48
+J�kai M�r - A gyevi t�rv�ny - Tanuls�gos mes�k, mond�k M�ty�s kir�lyr�l [2010], mesek�nyv 48
+M�ra Ferenc - A nagyhatalm� s�ndiszn�cska [2010], mesek�nyv 14
