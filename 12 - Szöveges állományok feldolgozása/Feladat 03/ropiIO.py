@@ -15,10 +15,10 @@ def readBooksFromFile(fileName: str) -> List[Player]:
     player: Player = None
 
     try:
-        with open(fileFullPath, encoding="utf-8", mode="r") as file:
+        with open(fileFullPath,encoding="utf-8", mode="r") as file:
             for line in file:
-                oneLine = line.strip()
-                data = oneLine.split("\t")
+                oneLine = line.strip() 
+                data = oneLine.split('\t')
 
                 player = Player()
                 player.name = data[0]
