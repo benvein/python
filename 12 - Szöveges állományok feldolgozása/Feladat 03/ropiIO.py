@@ -3,7 +3,7 @@ import os
 from ropi import Player
 from io import open
 
-def readBooksFromFile(fileName: str) -> List[Player]:
+def readPlayersFromFile(fileName: str) -> List[Player]:
 
     fileName: str = "data/adatok.txt"
     basepath: str = os.path.dirname(os.path.abspath(__file__))
@@ -34,3 +34,15 @@ def readBooksFromFile(fileName: str) -> List[Player]:
     except FileNotFoundError as ex:
         print(f"{ex.filename} nem talalhato")
         return []
+
+def writePlayersToFile(players: List[Player], fileName: str) -> None:
+    basepath: str = os.path.dirname(os.path.abspath(__file__))
+    basepath += "/output"
+    fileFullPath: str = os.path.join(basepath, fileName)
+
+    try:
+        with open(fileFullPath, encoding="utf-8", mode="w") as file:
+            for player in players:
+                file.write(f"{player.name}, {player.height}cm, {player.post}, {player.nationality}, {player.team}, {player.country}\n")
+    except FileNotFoundError as ex:
+        print(f"{ex.filename} nem talalhato")
