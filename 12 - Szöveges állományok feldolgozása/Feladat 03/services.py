@@ -1,6 +1,7 @@
 from ropiIO import *
 from typing import *
 from ropi import Player
+from ropi2 import *
 
 def writeToConsole(players: List[Player]) -> None:
     for player in players:
@@ -25,3 +26,31 @@ def sortPlayersByAscendingHeight(players: List[Player]) -> None:
                 temp = players[i]
                 players[i] = players[j]
                 players[j]  = temp
+
+def getNationalityFromFile(players: List[Player]) -> List[Nationality]:
+    nationalityList: List[Nationality] = []
+    player: Nationality = None
+
+    nemzetisegek = set({})
+    count: int = 0
+
+    for player in players:
+        nemzetisegek.add(player.nationality)
+
+    for nemzetiseg in nemzetisegek:
+        player = Nationality()
+        player.nations = countNationality(nemzetiseg, players)
+        player.countries = nemzetiseg
+
+        nationalityList.append(player)
+
+    return nationalityList
+
+def countNationality(nemzetiseg: str, players: List[Player]) -> int:
+    counter: int = 0
+    for player in players:
+        if(player.nationality==nemzetiseg):
+            counter +=1
+
+    return counter
+

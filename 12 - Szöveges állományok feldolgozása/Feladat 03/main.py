@@ -2,6 +2,7 @@ from typing import *
 from ropi import Player
 from ropiIO import *
 from services import *
+from ropi2 import *
 
 fileName: str = "data/adatok.txt"
 players: List[Player] = readPlayersFromFile(fileName)
@@ -17,3 +18,5 @@ sortPlayersByAscendingHeight(players)
 writePlayersToFile(players, "magaslatok.txt")
 
 #- Mutassuk be a nemzetisegek.txt állományba, hogy mely nemzetiségek képviseltetik magukat a röplabdavilágban mint játékosok és milyen számban. (uj osztaly, set)
+naciok: List[Nationality] = getNationalityFromFile(players)
+writePlayersToFile(naciok, "nemzetisegek.txt")

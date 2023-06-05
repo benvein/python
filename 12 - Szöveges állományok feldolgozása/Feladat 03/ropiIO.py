@@ -2,6 +2,7 @@ from typing import *
 import os
 from ropi import Player
 from io import open
+from ropi2 import *
 
 def readPlayersFromFile(fileName: str) -> List[Player]:
 
@@ -44,5 +45,17 @@ def writePlayersToFile(players: List[Player], fileName: str) -> None:
         with open(fileFullPath, encoding="utf-8", mode="w") as file:
             for player in players:
                 file.write(f"{player.name}, {player.height}cm, {player.post}, {player.nationality}, {player.team}, {player.country}\n")
+    except FileNotFoundError as ex:
+        print(f"{ex.filename} nem talalhato")
+
+def writePlayersToFile(players: List[Nationality], fileName: str) -> None:
+    basepath: str = os.path.dirname(os.path.abspath(__file__))
+    basepath += "/output"
+    fileFullPath: str = os.path.join(basepath, fileName)
+
+    try:
+        with open(fileFullPath, encoding="utf-8", mode="w") as file:
+            for player in players:
+                file.write(f"{player.countries}: {player.nations}\n")
     except FileNotFoundError as ex:
         print(f"{ex.filename} nem talalhato")
