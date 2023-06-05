@@ -16,4 +16,4 @@ writePlayersToFile(utoPosition, "utok.txt")
 sortPlayersByAscendingHeight(players)
 writePlayersToFile(players, "magaslatok.txt")
 
-#- Mutassuk be a nemzetisegek.txt állományba, hogy mely nemzetiségek képviseltetik magukat a röplabdavilágban mint játékosok és milyen számban. uj osztaly
+#- Mutassuk be a nemzetisegek.txt állományba, hogy mely nemzetiségek képviseltetik magukat a röplabdavilágban mint játékosok és milyen számban. (uj osztaly, set)
