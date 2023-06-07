@@ -9,6 +9,7 @@ players: List[Player] = readPlayersFromFile(fileName)
 
 writeToConsole(players)
 
+
 #Keressük ki az ütő játékosokat az utok.txt állömányba
 utoPosition: List[Player] = positionUto(players, "ütő")
 writePlayersToFile(utoPosition, "utok.txt")

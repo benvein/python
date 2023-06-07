@@ -64,14 +64,14 @@ def calculateAvgHeight(players: List[Player]) -> float:
 
     averageHeight = totalHeight/playerCount
 
-    return averageHeight
+    return round(averageHeight)
 
 def higherThanAvgPlayers(players: List[Player]) -> List[Player]:
     magasabbAtlagnal: List[Player] = []
-    atlagmagassag: float = calculateAvgHeight(players)
+    atlagmagassag: int = calculateAvgHeight(players)
 
     for player in players:
-        if(player.height>atlagmagassag):
+        if(player.height >= atlagmagassag):
             magasabbAtlagnal.append(player)
 
     return magasabbAtlagnal
