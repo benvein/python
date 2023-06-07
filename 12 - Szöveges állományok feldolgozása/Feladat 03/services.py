@@ -54,3 +54,27 @@ def countNationality(nemzetiseg: str, players: List[Player]) -> int:
 
     return counter
 
+def calculateAvgHeight(players: List[Player]) -> float:
+    averageHeight: float = 0
+    playerCount: int = len(players)
+    totalHeight: int = 0
+    
+    for player in players:
+        totalHeight += player.height
+
+    averageHeight = totalHeight/playerCount
+
+    return averageHeight
+
+def higherThanAvgPlayers(players: List[Player]) -> List[Player]:
+    magasabbAtlagnal: List[Player] = []
+    atlagmagassag: float = calculateAvgHeight(players)
+
+    for player in players:
+        if(player.height>atlagmagassag):
+            magasabbAtlagnal.append(player)
+
+    return magasabbAtlagnal
+
+    
+    

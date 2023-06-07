@@ -19,4 +19,9 @@ writePlayersToFile(players, "magaslatok.txt")
 
 #- Mutassuk be a nemzetisegek.txt állományba, hogy mely nemzetiségek képviseltetik magukat a röplabdavilágban mint játékosok és milyen számban. (uj osztaly, set)
 naciok: List[Nationality] = getNationalityFromFile(players)
-writePlayersToFile(naciok, "nemzetisegek.txt")
+writePlayersToFileNationality(naciok, "nemzetisegek.txt")
+
+#atlagnalmagasabbak.txt állományba keressük azon játékosok nevét és magasságát akik magasabbak mint az „adatbázisban” szereplő játékosok átlagos magasságánál.
+magasabbAtlagnal: List[Player] = higherThanAvgPlayers(players)
+writePlayersToFile(players, "atlagnalmagasabb.txt")
+

@@ -48,7 +48,7 @@ def writePlayersToFile(players: List[Player], fileName: str) -> None:
     except FileNotFoundError as ex:
         print(f"{ex.filename} nem talalhato")
 
-def writePlayersToFile(players: List[Nationality], fileName: str) -> None:
+def writePlayersToFileNationality(players: List[Nationality], fileName: str) -> None:
     basepath: str = os.path.dirname(os.path.abspath(__file__))
     basepath += "/output"
     fileFullPath: str = os.path.join(basepath, fileName)
